@@ -11,11 +11,17 @@ idea git配置
   --> 复制 https项目路径 --> 在idea中点击File --> ... --> GitHub --> 添加账户 --> 项目右键 --> Git
   --> Repository --> Remotes(配置远程仓库地址) --> 再次选择Git --> Repository --> push --> 选择某一个
   版本提交
+
 4.开发人员从远程仓库克隆项目(开发人员克隆项目经理的项目)
-  点击VCS --> 选择Git --> clone --> 在github中复制当前项目路径如:https://github.com/19892483978/gitTestCommit.git
+  点击VCS --> 选择Git --> clone --> 在github中复制当前项目路径如:
+  https://github.com/19892483978/gitTestCommit.git(远程仓库项目可以和当前项目名不一样)
   --> 生成项目后配置重新配置maven仓库
-5.项目经理邀请其他开发共同开发这个项目
- 在github中选择
+
+5.项目经理邀请其他开发人员共同开发这个项目(其他账户必须被邀请才有权限push到远程仓库)
+ 在github中选择gitTestCommit工程 --> Settings --> Manage access(管理员访问) -->
+ 输入开发人员账号 --> 复制邀请路径发送给开发人员 --> 开发人员同意加入团队
+
+6.从远程仓库拉取(pull)代码
 
 Git: 使用手册
     左下方箭头   pull            拉   获取代码
