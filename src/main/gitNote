@@ -11,9 +11,11 @@ idea git配置
   --> 复制 https项目路径 --> 在idea中点击File --> ... --> GitHub --> 添加账户 --> 项目右键 --> Git
   --> Repository --> Remotes(配置远程仓库地址) --> 再次选择Git --> Repository --> push --> 选择某一个
   版本提交
-4.开发人员从远程仓库克隆项目(开发人员与项目经理不是同一电脑和账号)
+4.开发人员从远程仓库克隆项目(开发人员克隆项目经理的项目)
   点击VCS --> 选择Git --> clone --> 在github中复制当前项目路径如:https://github.com/19892483978/gitTestCommit.git
   --> 生成项目后配置重新配置maven仓库
+5.项目经理邀请其他开发共同开发这个项目
+ 在github中选择
 
 Git: 使用手册
     左下方箭头   pull            拉   获取代码
