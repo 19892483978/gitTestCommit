@@ -2,11 +2,14 @@ idea git配置
 1.配置git启动器
  File --> Settings --> Version Control --> Git -->
  D:\MyFile\git\Git\bin\git.exe 点击Test 出现版本号时配置成功
-2.使用idea将项目提交到远程git仓库
+2.使用idea将项目提交到本地git仓库
  VCS --> import into Version Control --> Create Git Repository创建版本库(等于git init命令创建版本库) -->
- 选择中当前目录 生成.git目录表示创建成功 --> 点击项目右键 --> Git --> Add(等同将项目添加到暂存区) -->
+ 选择中当前目录 生成.git目录表示创建成功 --> 项目右键 --> Git --> Add(等同将项目添加到暂存区) -->
  再次点击项目并右键 --> Git --> Commit Directory(等同将项目提交到本地仓库)
-
+3.提交到远程仓库
+  new Repository(项目经理在github上创建项目) --> 填写 Repository name 项目名字 and Description描述
+  --> 复制 https项目路径 --> 在idea中点击File --> ... --> GitHub --> 添加账户 --> 项目右键 --> Git
+  --> Repository --> Remotes(配置远程仓库地址) -->
 
 Git: 使用手册
     左下方箭头   pull            拉   获取代码
@@ -19,6 +22,6 @@ idea git版本回退,显示工程记录后选中某一个历史版本,右键选�
         第一个 Soft  文件不会更改，差异将被暂存以便提交。
         第二个 Mixed 文件不会更改，差异不会被暂存。
         第三个 Hard 文件将恢复到所选提交的状态。警告:任何本地更改都将丢失。(会覆盖当前工程,未部署到git仓库的文件将会消失!)
-        第四个 Keep 文件将恢复到选定提交的状态，但本地更改将保持不变。
+        第四个 Keep 文件将恢复到选定提交的状态，但本地更改将保持不变
 
 idea git修改日志,右键Reword修改日志
