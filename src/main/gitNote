@@ -6,10 +6,14 @@ idea git配置
  VCS --> import into Version Control --> Create Git Repository创建版本库(等于git init命令创建版本库) -->
  选择中当前目录 生成.git目录表示创建成功 --> 项目右键 --> Git --> Add(等同将项目添加到暂存区) -->
  再次点击项目并右键 --> Git --> Commit Directory(等同将项目提交到本地仓库)
-3.提交到远程仓库
+3.项目经理将项目提交(push)到远程仓库
   new Repository(项目经理在github上创建项目) --> 填写 Repository name 项目名字 and Description描述
   --> 复制 https项目路径 --> 在idea中点击File --> ... --> GitHub --> 添加账户 --> 项目右键 --> Git
-  --> Repository --> Remotes(配置远程仓库地址) -->
+  --> Repository --> Remotes(配置远程仓库地址) --> 再次选择Git --> Repository --> push --> 选择某一个
+  版本提交
+4.开发人员从远程仓库克隆项目(开发人员与项目经理不是同一电脑和账号)
+  点击VCS --> 选择Git --> clone --> 在github中复制当前项目路径如:https://github.com/19892483978/gitTestCommit.git
+  --> 生成项目后配置重新配置maven仓库
 
 Git: 使用手册
     左下方箭头   pull            拉   获取代码
